@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<htm lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock%}</title>
+        <link ref="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+    </head>
+
+    <body>
+        
+        <h1 class="text-primary">Hello</h1>
+        {% block main_content %}{% endblock%}
+        <scipt src="{% static 'js/boostrap.bundle.min.js }"></scipt>
+    </body>
+</html>
