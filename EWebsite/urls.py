@@ -22,10 +22,10 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('app_shop.urls')),
-    path('cart/', include('app_cart.urls')),
-    path('user/', include('app_user.urls')),
-    path('order/', include('app_order.urls'))
+    path('', include(('app_shop.urls', 'app_shop'))),
+    path('cart/', include(('app_cart.urls', 'app_cart'))),
+    path('user/', include(('app_user.urls', 'app_user'))),
+    path('order/', include(('app_order.urls', 'app_order')))
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
