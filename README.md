@@ -46,18 +46,15 @@ This project scrapes product data from a well-known Vietnamese e-commerce websit
 All dashboards are built using Tableau and include:
 
 ### 💰 Price & Performance
-- Histogram of price distribution
-- Boxplot: Price by Category
-- Bubble Chart: Performance vs Price & Rating
-- Scatter plot: Price vs Rating (colored by category, sized by sales)
+- Bar chart: price by category and it will classify price group as well
+- Table Top Sold: showing the category and subcategory, the most sold product as well as the most highest performance product
 
 ### 🏷️ Brands & Product Groups
-- Bar chart: Avg performance by brand
-- Heatmap: Sub-category vs Brand (avg performance)
+- Bar chart: the number of products of top 5 brand 
 
 ### 🔍 Quality Analysis
 - Rating distribution (1–5 stars)
-- Sold vs Rating scatter plot (find high-selling low-rated products)
+- Sold vs subcategory treemap
 
 ### 🥇 Top Products
 - Table of top 10 products by performance, rating, and sales
